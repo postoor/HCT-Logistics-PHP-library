@@ -1,0 +1,13 @@
+{
+    "name": "lksdub/hct-logistics",
+    "description": "HCT Logistics PHP library",
+    "type": "library",
+    "authors": [
+        {
+            "name": "lksdub",
+            "email": "lksdub@404nofound.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
