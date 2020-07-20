@@ -1,5 +1,5 @@
 {
-    "name": "lksdub/hct-logistics",
+    "name": "postoor/hct-logistics",
     "description": "HCT Logistics PHP library",
     "type": "library",
     "authors": [{
@@ -9,7 +9,7 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=7.0",
-        "wixel/gump": "dev-master",
+        "wixel/gump": "dev-master"
     },
     "autoload": {
         "psr-4": {
