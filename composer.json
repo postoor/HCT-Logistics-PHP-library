@@ -6,10 +6,10 @@
         "name": "lksdub",
         "email": "lksdub@404nofound.com"
     }],
-    "minimum-stability": "dev",
+    "license": "MIT",
     "require": {
         "php": ">=7.0",
-        "wixel/gump": "dev-master"
+        "wixel/gump": "v1.11.0"
     },
     "autoload": {
         "psr-4": {
