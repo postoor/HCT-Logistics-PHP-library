@@ -2,12 +2,18 @@
     "name": "lksdub/hct-logistics",
     "description": "HCT Logistics PHP library",
     "type": "library",
-    "authors": [
-        {
-            "name": "lksdub",
-            "email": "lksdub@404nofound.com"
-        }
-    ],
+    "authors": [{
+        "name": "lksdub",
+        "email": "lksdub@404nofound.com"
+    }],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "php": ">=7.0",
+        "wixel/gump": "dev-master",
+    },
+    "autoload": {
+        "psr-4": {
+            "lksdub\\HCTLogistics\\": "src"
+        }
+    }
 }
