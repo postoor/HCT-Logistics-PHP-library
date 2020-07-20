@@ -19,7 +19,7 @@ class EDIWebService
         $password,
         $url = 'https://hctrt.hct.com.tw/EDI_WebService2/Service1.asmx?wsdl',
         $maxRow = 5
-        ) {
+    ) {
         $this->company = $company;
 
         $this->password = $password;
