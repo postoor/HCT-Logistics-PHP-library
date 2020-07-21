@@ -1,6 +1,6 @@
 <?php
 
-namespace lksdub\HCTLogistics;
+namespace postoor\HCTLogistics;
 
 use GuzzleHttp\Client;
 
