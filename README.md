@@ -3,7 +3,7 @@
 ### Upload Shipping information
 
 ```php
-use lksdub\HCTLogistics\EDIWebService;
+use postoor\HCTLogistics\EDIWebService;
 
 $edi = new EDIWebService('company', 'password');
 
@@ -67,7 +67,7 @@ $data = $edi->uploadTransData($shippingData, $errorMessages);
 Modify weight
 
 ```php
-use lksdub\HCTLogistics\EDIWebService;
+use postoor\HCTLogistics\EDIWebService;
 
 $edi = new EDIWebService('company', 'password');
 
@@ -106,7 +106,7 @@ $data = $edi->updateData($shippingData, $errorMessages);
 ### Confirm Shipping information
 
 ```php
-use lksdub\HCTLogistics\EDIWebService;
+use postoor\HCTLogistics\EDIWebService;
 
 $edi = new EDIWebService('company', 'password');
 
@@ -136,3 +136,23 @@ $data = $edi->transReport($shippingData, $errorMessages);
 | success| Y: success, N: fail |
 | edelno | HCT Serial No|
 | ErrMsg | Error Message |
+
+### Query Goods
+
+```php
+use postoor\HCTLogistics\Goods;
+use postoor\HCTLogistics\GoodsHelper;
+
+$iv = 'LIUALIED';
+$v = '6542DFAKLJ4465465465446';
+$goods = new Goods($iv, $v);
+
+// Get Tracking History
+$data = $goods->queryGoods(['6679804342']);
+
+// Get Tracking Status Code
+$goodsHelper = new GoodsHelper();
+foreach ($data as $id => $value) {
+        $trackData[$id] = $goodsHelper->getGoodsStatusCode($value['detail'][0]['statusString'], 1);
+    }
+```
